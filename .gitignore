@@ -1,0 +1,8 @@
+data/
+.ipynb_checkpoints/
+__pycache__/
+models/
+.DS_Store
+audio.zip
+audio/
+related_doc/
