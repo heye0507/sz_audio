@@ -106,7 +106,11 @@ class MelSpectrogramDataset(Dataset):
                 image = image,
             )
             image = aug['image']
-        y = self.df.iloc[idx].tsh,self.df.iloc[idx].t3,self.df.iloc[idx].t4
+        y = (
+            self.df.iloc[idx].tsh.astype(np.float32),
+            self.df.iloc[idx].t3.astype(np.float32),
+            self.df.iloc[idx].t4.astype(np.float32)
+        )
 #         if self.stats:
 #             x = self.normalize(x)
         return (image,(y,item_p))

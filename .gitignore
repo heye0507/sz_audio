@@ -4,5 +4,6 @@ __pycache__/
 models/
 .DS_Store
 audio.zip
+audio_data/
 audio/
 related_doc/
