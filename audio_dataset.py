@@ -2,6 +2,7 @@ import pandas as pd
 import numpy as np
 
 import soundfile as sf
+import librosa
 
 import torch
 from torch.utils.data import Dataset
